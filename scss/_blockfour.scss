@@ -1,0 +1,98 @@
+.blockfour {
+    width: 100%;
+    min-height: 550px;
+    background-color: rgb(0, 112, 160);
+    padding: 80px 0px 0px 215px;
+    display: flex;
+    gap: 197px;
+
+
+
+
+    &__leftpic img {
+        max-width: 382px;
+        min-height: 374px;
+    }
+
+    &__right {
+        max-width: 501px;
+        min-height: 389px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: 'fraunchesr';
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 50.4px;
+    }
+
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-family: 'interr';
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 27px;
+    }
+
+
+    &__pluses {
+        max-width: 501px;
+        min-height: 99px;
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+
+    &__pluselement {
+        width: 100%;
+        min-height: 21px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    &__plusetext {
+        color: rgb(255, 255, 255);
+        font-family: 'interr';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.6px;
+    }
+
+
+    &__btn {
+        max-width: 176px;
+        min-height: 43px;
+        padding: 8px 32px;
+        font-family: 'interr';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        cursor: pointer;
+        color: white;
+        background-color: rgb(0, 112, 160);
+        border: 2px solid white;
+        transition: 0.7s;
+        margin-top: 10px;
+
+        &:hover {
+            transform: scale(1.05);
+            border: 2px solid black;
+        }
+        &:focus {
+            transform: scale(1.05);
+            border: 2px solid black;
+        }
+
+
+    }
+
+
+
+
+}

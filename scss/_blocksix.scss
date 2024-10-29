@@ -1,0 +1,115 @@
+.blocksix {
+    width: 100%;
+    min-height: 747px;
+    background: rgb(247, 249, 250);
+    padding: 80px 0px 0px 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 420px;
+    }
+
+    &__title {
+        color: rgb(31, 31, 31);
+        font-family: 'fraunchesr';
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 50.4px;
+    }
+
+    &__link {
+        color: rgb(0, 112, 160);
+        font-family: 'interr';
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 27px;
+        transition: 0.7s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+        &:focus {
+            transform: scale(1.02);
+            box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+        }
+
+    }
+
+    &__flex {
+        max-width: 1131px;
+        min-height: 486.63px;
+        display: flex;
+        gap: 32px;
+    }
+
+
+    &__flexel {
+        max-width: 355px;
+        min-height: 487px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__flexpic img {
+        max-width: 355px;
+        min-height: 238px;
+    }
+
+    &__flexelcontent {
+        width: 100%;
+        min-height: 249px;
+        background-color: white;
+        padding: 25px 0px 0px 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__flexelminiblock {
+        max-width: 122px;
+        min-height: 22px;
+        background: rgb(230, 247, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__flexspan {
+        color: rgb(44, 144, 201);
+        font-family: 'interr';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+
+    &__flexeltitle {
+        color: rgb(31, 31, 31);
+        font-family: 'fraunchesr';
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 31.25px;
+    }
+
+
+    &__flexeltext {
+        color: rgb(31, 31, 31);
+        font-family: 'interr';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+    &__flexeldate {
+        color: rgb(31, 31, 31);
+        font-family: 'interr';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+}

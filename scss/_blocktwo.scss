@@ -1,0 +1,151 @@
+.blocktwo {
+    width: 100%;
+    min-height: 694px;
+    background: rgb(247, 249, 250);
+    padding: 80px 0px 0px 155px;
+
+
+    &__title {
+        color: rgb(31, 31, 31);
+        font-family: 'fraunchesr';
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 50.4px;
+    }
+
+    &__subtitle {
+        font-size: 39px;
+    }
+
+    &__flexcont {
+        width: 73%;
+        min-height: 400px;
+        // border: 1px solid black;
+        display: flex;
+        position: relative;
+        top: 35px;
+        padding: 27px 0px 0px 18px;
+        position: relative;
+    }
+
+    &__flexcontright {
+        position: absolute;
+        transform: translate(0px, -110px); /* Правильный способ перемещения */
+        left: 60%;
+    }
+
+    &__pic img {
+        max-width: 481px;
+        min-height: 479px;
+    }
+
+    &__flexcontleft {
+        max-width: 485.83px;
+        min-height: 345px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__details {
+        max-width: 450px;
+        width: 100%;
+        border-top: 2px solid rgb(194, 205, 216);
+        border-bottom: 2px solid rgb(194, 205, 216);
+        padding: 10px;
+        position: relative;
+        overflow: hidden; /* Применяется, чтобы предотвратить сдвиги */
+        transition: height 0.5s ease; /* Добавьте переход для высоты */
+    
+        summary {
+            list-style: none;
+            appearance: none; /* Убирает стандартную стрелку */
+            cursor: pointer;
+            padding-left: 30px; /* Отступ для кастомного значка */
+            font-family: 'fraunchesr';
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 25.2px;
+            padding-bottom: 18px;
+            position: relative;
+    
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                top: 30%;
+                transform: translateY(-50%);
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.8349 18.9525"><path d="M23.62 10.05C22.59 3.71 18.18 -0.95 14.25 0.16C13.43 0.39 12.77 0.94 10.14 3.66C8.77 5.08 8.35 5.42 8.11 5.35C5.56 4.35 3.95 5.59 3.97 8.59C3.97 10.18 4.05 10.6 4.56 12.2C4.7 12.62 2.93 14.27 0.7 16.62C-1.09 18.26 0.79 18.76 3.49 17.89C8.13 16.39 7.41 16.45 9.02 17.36C11.65 18.84 15.08 19.38 16.64 18.57C16.95 18.42 17.12 18.09 17.09 17.73C17.09 17.72 16.95 16.19 16.95 16.2C19.08 15.35 21.65 14.48 22.87 13.6C24.08 12.71 23.91 11.86 23.62 10.05ZM3.47 16.44C3.3 16.44 5.34 14.19 5.48 14.04C5.51 14.23 5.95 14.93 6.57 15.35C6.59 15.43 3.75 16.44 3.47 16.44ZM19.25 13.03C18.38 13.23 15.64 14.32 14.67 14.86C13.97 15.25 13.94 15.3 14.03 15.8C14.38 17.7 14.47 17.59 12.82 17.17C9.08 16.2 4.75 8.87 6.46 6.39C6.95 5.69 7.62 6.58 7.66 7.99C7.71 9.49 9.03 11.95 9.97 12.56C10.51 12.92 10.79 12.48 10.65 12.2C8.85 8.87 9.14 7.98 9.27 7.48C9.27 7.48 13.24 3.46 13.57 3.1C14.77 1.82 15.83 1.76 16.99 2.88C19.14 4.97 20.8 8.29 21.22 11.33C21.31 12.14 20.66 12.71 19.25 13.03Z" fill="%23006B99"/></svg>');
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: transform 0.3s ease;
+            }
+    
+            &__summaryicon2::before {
+                background-image: url('data:image/svg+xml;utf8,<svg width="32.000000" height="32.000000" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs><clipPath id="clip2_881"><rect id="IMAGE" rx="-0.500000" width="31.000000" height="31.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/></clipPath></defs><g clip-path="url(%23clip2_881)"><path id="Vector" d="M18.31 15.14C18.65 15.14 18.89 14.97 19.12 14.53C19.97 12.96 20.66 12.85 21.03 14.2C21.4 15.53 22.81 15.66 22.81 14.38C22.81 12.96 20.57 11.8 18.97 12.38C17.78 12.82 17.23 15.14 18.31 15.14Z" fill="%23006B99" fill-opacity="1.000000" fill-rule="nonzero"/><path id="Vector" d="M10.91 15.57C10.91 14.34 11.75 13.84 12.15 14.82C12.61 15.91 13.41 16.23 13.71 15.43C14.28 13.97 11.24 12.53 9.87 13.61C9.33 14.03 8.85 15.29 9.04 15.79C9.28 16.41 10.91 16.2 10.91 15.57Z" fill="%23006B99" fill-opacity="1.000000" fill-rule="nonzero"/><path id="Vector" d="M11.86 22.5C15.56 24.14 19.32 23.65 21.79 21.19C24.38 18.61 23.39 15.91 20.04 16.42C19.72 16.46 18.78 16.81 17.96 17.18C16.31 17.93 15.29 17.98 12.99 17.43C9.22 16.55 8.26 20.91 11.86 22.5ZM21.42 17.49C22.05 18.29 21.76 19.65 20.78 20.58C20.13 21.19 20.2 21.24 19.76 19.72C19.57 19.05 19.34 18.36 19.26 18.18C19.01 17.54 20.97 16.92 21.42 17.49ZM17.27 18.44C18.09 18.22 18.09 18.2 18.46 19.99C18.88 21.95 18.88 21.97 18.17 22.22C16.8 22.71 16.96 22.68 16.62 18.61L17.27 18.44ZM13.97 18.59L15.51 18.59C15.51 21.48 15.55 21.44 15.75 22.49L15.01 22.35C13.86 22.14 13.97 22.06 13.97 18.59ZM12.4 18.14C12.88 18.26 13.09 21.67 12.62 21.67C12.18 21.67 11.16 20.41 11.02 19.68C10.8 18.48 11.25 17.89 12.29 18.14C12.48 18.26 12.62 18.6 12.4 18.14Z" fill="%23006B99" fill-opacity="1.000000" fill-rule="nonzero"/></g></svg>') !important;
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: transform 0.3s ease;
+            }
+    
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-left: 10px; /* Отступ между значками */
+                position: absolute;
+                right: 10px; /* Отступ от правого края */
+                top: 30%;
+                transform: translateY(-50%);
+                background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zM9 15.707l-5.707-5.707 1.414-1.414L9 12.879l5.293-5.293 1.414 1.414L9 15.707z" fill="%23006B99"/></svg>');
+                background-size: contain;
+                background-repeat: no-repeat;
+                transition: transform 0.3s ease;
+            }
+    
+    
+            &:focus {
+                outline: none; /* Убирает обводку при фокусе */
+            }
+        }
+    
+
+        &[open] {
+            border-bottom: none; /* Убираем нижнюю границу при открытии */
+            background-color: rgba(0, 107, 153, 0.1); /* Легкий фон при открытии */
+        }
+
+
+      
+        /* Контент внутри details */
+        .details-content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.5s ease;
+      
+          /* При открытии задаем высоту */
+          details[open] & {
+            max-height: 500px; /* Задайте максимальную высоту под контент */
+          }
+      
+          /* Высота для закрытого состояния */
+          &:not([open]) {
+            height: 10px; /* Можно задать небольшую высоту для закрытого состояния */
+            width: 1500px;
+          }
+        }
+      
+        .blocktwo__detailtext {
+          color: rgb(31, 31, 31);
+          font-family: 'interr';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          padding-left: 20px;
+        }
+      }
+    }      
